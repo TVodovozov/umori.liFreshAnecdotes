@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">umori.liFreshAnecdotes</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="search_title">Поиск</string>
+    <string name="item_menu_all_jokes">Все анекдоты</string>
+    <string name="item_menu_favorites">Избранное</string>
+    <string name="error_no_internet">Отсутствует интернет соединение</string>
+    <string name="unknown_error">Не известная ошибка</string>
+
+</resources>

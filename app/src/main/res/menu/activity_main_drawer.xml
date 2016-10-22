@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_all_jokes"
+            android:icon="@drawable/ic_menu_all_jokes"
+            android:title="@string/item_menu_all_jokes" />
+        <item
+            android:id="@+id/item_favorites"
+            android:icon="@drawable/ic_menu_favorites"
+            android:title="@string/item_menu_favorites" />
+
+    </group>
+
+</menu>
