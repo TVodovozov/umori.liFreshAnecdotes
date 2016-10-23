@@ -49,7 +49,7 @@ public class AdapterFavorites extends RecyclerView.Adapter<AdapterFavorites.Favo
 
         public FavoriteHolder(View itemView) {
             super(itemView);
-            favoritesText = (TextView) itemView.findViewById(R.id.favorites_item_favorites_text);
+            favoritesText = (TextView) itemView.findViewById(R.id.favorite_item_text);
         }
     }
 }

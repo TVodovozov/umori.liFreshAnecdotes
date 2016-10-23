@@ -6,6 +6,7 @@ import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -64,16 +65,13 @@ public class AdapterAllJokes extends RecyclerView.Adapter<AdapterAllJokes.AllJok
         if (allJokes.isFavorites()) {
             Glide
                     .with(context)
-                    .load(R.drawable.ic_star_check_24dp)
+                    .load(R.drawable.ic_star_check)
                     .diskCacheStrategy(DiskCacheStrategy.SOURCE)
                     .into(holder.favorite);
-            holder
-                    .favorite
-                    .setImageResource(R.drawable.ic_star_uncheck_24dp);
         } else {
             Glide
                     .with(context)
-                    .load(R.drawable.ic_star_chek)
+                    .load(R.drawable.ic_star_uncheck)
                     .diskCacheStrategy(DiskCacheStrategy.SOURCE)
                     .into(holder.favorite);
         }
@@ -83,20 +81,18 @@ public class AdapterAllJokes extends RecyclerView.Adapter<AdapterAllJokes.AllJok
                     @Override
                     public void onClick(View v) {
                         AllJokesEntity allJokesEntity = allJokesList.get(position);
-
                         if (allJokesEntity.isFavorites()) {
                             allJokesEntity.setFavorites(false);
                             Glide
                                     .with(context)
-                                    .load(R.drawable.ic_star_uncheck_24dp)
+                                    .load(R.drawable.ic_star_uncheck)
                                     .diskCacheStrategy(DiskCacheStrategy.SOURCE)
                                     .into(holder.favorite);
-
                         } else {
                             allJokesEntity.setFavorites(true);
                             Glide
                                     .with(context)
-                                    .load(R.drawable.ic_star_check_24dp)
+                                    .load(R.drawable.ic_star_check)
                                     .diskCacheStrategy(DiskCacheStrategy.SOURCE)
                                     .into(holder.favorite);
                         }
