@@ -27,7 +27,7 @@
             android:layout_height="44dp"
             android:background="@color/colorAccent"
             android:id="@+id/favorite_favorite_image"
-            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true" />
 
     </RelativeLayout>
